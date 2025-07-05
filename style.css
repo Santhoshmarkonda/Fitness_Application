@@ -57,7 +57,23 @@ section p {
   margin: 10px auto;
 }
 
-/* Medium-size Section Images */
+/* Hero button */
+.hero-section button {
+  margin-top: 20px;
+  background: orange;
+  color: black;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+.hero-section button:hover {
+  background-color: #e69500;
+}
+
+/* Section Images */
 section img {
   width: 100%;
   max-width: 800px;
@@ -70,8 +86,7 @@ section img {
   max-width: 300px;
 }
 
-
-/* Grid Layout (Services, Trainers, Membership) */
+/* Grid Layout */
 .grid {
   display: flex;
   flex-wrap: wrap;
@@ -91,6 +106,10 @@ section img {
   height: auto;
   border-radius: 8px;
   margin-bottom: 10px;
+  transition: transform 0.3s ease;
+}
+.grid img:hover {
+  transform: scale(1.05);
 }
 .grid p {
   font-size: 16px;
@@ -131,4 +150,35 @@ footer {
   text-align: center;
   padding: 25px 10px;
   font-size: 14px;
+}
+
+/* Carousel Image Hover Effect */
+.carousel-inner img {
+  transition: transform 0.4s ease;
+}
+.carousel-inner img:hover {
+  transform: scale(1.03);
+}
+
+/* FAQ */
+.faq {
+  text-align: left;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.faq p {
+  margin: 15px 0;
+  font-size: 16px;
+}
+
+/* Testimonials */
+#testimonials .grid div {
+  background-color: #1f1f1f;
+  font-style: italic;
+  font-size: 16px;
+}
+#testimonials strong {
+  display: block;
+  margin-top: 10px;
+  color: orange;
 }
